@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@+id/edit_tel"
+        android:textSize="20dp"
+        android:text="전화번호"
+        />
+    <EditText
+        android:id="@+id/edit_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_tel"
+        android:hint="000-0000-0000"
+        />
+
+    <Button
+        android:id="@+id/btn_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입력"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edit_tel"
+        android:layout_toLeftOf="@+id/cancel_button"
+        android:backgroundTint="#CDDC39"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edit_tel"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#CDDC39"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>
